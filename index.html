@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Latvijas kūdras karte</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<!-- ✅ Logotipu josla ar diviem attēliem -->
+<div class="brand-overlay">
+  <div class="logos">
+    <img src="images/LVGMC_1300-AM.png" alt="LVGMC">
+    <img src="images/logo.png" alt="Klimata un enerģētikas ministrija">
+  </div>
+ 
+</div>
+
+<body>
+
+<div id="map"></div>
+<div id="sidebar-backdrop"></div>
+
+<div id="sidebar">
+    <h1>Kūdras slāņu apkopojums</h1>
+    <p class="subtitle">Latvijas licences, degradētās teritorijas un vēsturiskie dati</p>
+
+    <div id="basemap-toggle">
+        <button id="toggle-basemap">Gaišā karte</button>
+    </div>
+
+    <div id="search-container">
+        <input
+            type="text"
+            id="search-input"
+            placeholder="Meklēt pēc atribūta (piem. nosaukums)"
+        />
+        <button id="search-btn">Meklēt</button>
+    </div>
+    <div id="layer-groups"></div>
+</div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- TopoJSON client -->
+<script src="https://unpkg.com/topojson-client@3"></script>
+
+<!-- Custom JS -->
+<script src="script.js"></script>
+
+</body>
+<button id="sidebar-toggle">☰</button>
+</html>
