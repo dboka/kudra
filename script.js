@@ -50,7 +50,7 @@ const layerConfigs = [
     {
         key: "eraf",
         title: "Kūdras ERAF izplatība",
-        file: "data/Kudra_ERAF.topojson",
+        file: "data/Kudra_eraf.topojson",
         color: "#ff8800",
         group: "Kūdras ieguves vieta (poligoni, punkti)",
         type: "polygon"
