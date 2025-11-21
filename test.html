@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <title>Enerģētikas karte</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ArcGIS SDK -->
+  <link rel="stylesheet" href="https://js.arcgis.com/4.34/esri/themes/light/main.css">
+  <script src="https://js.arcgis.com/4.34/"></script>
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+  <div class="header">
+    Rīks industriālajai attīstībai piemērotāko teritoriju noteikšanai
+  </div>
+
+  <div class="wrapper">
+
+    <!-- MAP -->
+    <div id="map">
+      <div class="zoom-controls">
+        <div id="zoomIn" class="zoom-btn">+</div>
+        <div id="zoomOut" class="zoom-btn">−</div>
+      </div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+      <div class="layer-btn">
+        <span>🌞 SAULE</span>
+        <input type="checkbox" id="layer-saule">
+      </div>
+
+      <div class="layer-btn">
+        <span>🌬️ VĒJŠ (līdz 2028.g.)</span>
+        <input type="checkbox" id="layer-vejs1">
+      </div>
+
+      <div class="layer-btn">
+        <span>🌬️ VĒJŠ (no 2028.g.)</span>
+        <input type="checkbox" id="layer-vejs2">
+      </div>
+
+      <div class="layer-btn">
+        <span>🍃 BIOMASA</span>
+        <input type="checkbox" id="layer-biomasa">
+      </div>
+
+      <div class="layer-btn">
+        <span>♻️ BIOGĀZE</span>
+        <input type="checkbox" id="layer-biogaze">
+      </div>
+
+      <h3>Krāsu apzīmējumi</h3>
+      <div class="legend-box green">Zaļš — ierobežojumi nav konstatēti.</div>
+      <div class="legend-box yellow">Dzeltens — nelieli ierobežojumi.</div>
+      <div class="legend-box orange">Oranžs — būtiski ierobežojumi.</div>
+      <div class="legend-box blue">Zils — izvietošana nav pieļaujama.</div>
+
+    </div>
+
+  </div>
+
+  <!-- Custom logic -->
+  <script src="script1.js"></script>
+</body>
+</html>

@@ -210,6 +210,7 @@ layerConfigs.forEach(loadTopoLayer);
 // ==========================================
 // SIDEBAR – LAYER LIST
 // ==========================================
+
 const groups = {};
 layerConfigs.forEach(cfg => {
     if (!groups[cfg.group]) groups[cfg.group] = [];

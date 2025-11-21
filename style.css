@@ -309,3 +309,24 @@ html, body {
         transform: translateY(-50%);
     }
 }
+.nav-buttons {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tool-button {
+  background: #004a8f;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.tool-button:hover {
+  background: #0063c3;
+}
